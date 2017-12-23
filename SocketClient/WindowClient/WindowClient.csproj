@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B60955A-639A-4E37-A3DB-C8D76D21940D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowClient</RootNamespace>
+    <AssemblyName>WindowClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSLib.Extension, Version=1.4.2.0, Culture=neutral, PublicKeyToken=61d6a007a0eb6994, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FSLib.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="FSLib.Network, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eb0741d7f117d5c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FSLib.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="NetDimension.NanUI, Version=0.5.0.28113, Culture=neutral, PublicKeyToken=1c00e6f9eba1a657, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\XiakeCustom\NetDimension.NanUI\bin\Debug\NetDimension.NanUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="www\fonts\fontawesome-webfont.eot" />
+    <None Include="www\fonts\fontawesome-webfont.ttf" />
+    <None Include="www\fonts\fontawesome-webfont.woff" />
+    <None Include="www\fonts\fontawesome-webfont.woff2" />
+    <None Include="www\fonts\FontAwesome.otf" />
+    <None Include="www\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="www\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="www\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="www\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="www\Scripts\jquery-2.2.3.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="www\about.html" />
+    <Content Include="www\Content\about.css" />
+    <Content Include="www\Content\base.css" />
+    <Content Include="www\Content\bootstrap-theme.css" />
+    <Content Include="www\Content\bootstrap-theme.min.css" />
+    <Content Include="www\Content\bootstrap.css" />
+    <Content Include="www\Content\bootstrap.min.css" />
+    <Content Include="www\Content\font-awesome.css" />
+    <Content Include="www\Content\font-awesome.min.css" />
+    <Content Include="www\fonts\fontawesome-webfont.svg" />
+    <Content Include="www\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="www\images\balloon.png" />
+    <Content Include="www\images\beans.png" />
+    <Content Include="www\images\cloudLarge.png" />
+    <Content Include="www\images\cloudMedium.png" />
+    <Content Include="www\images\cloudSmall.png" />
+    <Content Include="www\images\dowEventCenter.png" />
+    <Content Include="www\images\friendshipShell.png" />
+    <Content Include="www\images\Glockenspiel.png" />
+    <Content Include="www\images\groundBack.png" />
+    <Content Include="www\images\groundFront.png" />
+    <Content Include="www\images\groundMid.png" />
+    <Content Include="www\images\logo.png" />
+    <Content Include="www\images\Planetarium.png" />
+    <Content Include="www\images\qrcode.jpg" />
+    <Content Include="www\images\skyline.png" />
+    <Content Include="www\index.html" />
+    <Content Include="www\microsurface.html" />
+    <Content Include="www\Scripts\about.js" />
+    <Content Include="www\Scripts\base.js" />
+    <Content Include="www\Scripts\bootstrap.js" />
+    <Content Include="www\Scripts\bootstrap.min.js" />
+    <Content Include="www\Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="www\Scripts\jquery-2.2.3.js" />
+    <Content Include="www\Scripts\jquery-2.2.3.min.js" />
+    <Content Include="www\Scripts\stats.min.js" />
+    <Content Include="www\Scripts\xg.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

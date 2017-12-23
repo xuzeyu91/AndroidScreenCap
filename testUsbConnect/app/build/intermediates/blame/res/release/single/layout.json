@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\src\\main\\res\\layout\\main.xml"
+    }
+]

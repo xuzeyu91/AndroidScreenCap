@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\qunkongdemo\\myDemo\\android-side\\testUsbConnect\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    }
+]
