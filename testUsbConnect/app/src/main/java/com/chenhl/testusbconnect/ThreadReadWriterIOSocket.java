@@ -34,16 +34,17 @@ public class ThreadReadWriterIOSocket implements Runnable
 		run();
 	}
 
+    Process process = null;
+    DataOutputStream os = null;
+    BufferedOutputStream out;
 	@Override
 	public void run()
 	{
 		Log.d("chl", "a client has connected to server!");
-		BufferedOutputStream out;
 		BufferedInputStream in;
 		//command
-		String command = "screencap -p /sdcard/screen.jpg";
-		Process process = null;
-		DataOutputStream os = null;
+		final String command = "screencap -p /sdcard/screen.jpg";
+
 		try
 		{
 			/* PC端发来的数据msg */
@@ -66,39 +67,37 @@ public class ThreadReadWriterIOSocket implements Runnable
 					/* 读操作命令 */
 					currCMD = readCMDFromSocket(in);
 					Log.v(androidService.TAG, Thread.currentThread().getName() + "---->" + "**currCMD ==== " + currCMD);
-					if(currCMD.equals("getfile")){
-//						currCMD = "file";
-//						out.write(currCMD.getBytes());
-//						out.flush();
-						while(true) {
-							process = Runtime.getRuntime().exec(new String[]{"su", "-c", command});// the phone must be root,it can exctue the adb command
-							process.waitFor();
-							//saveMyBitmap(getSmallBitmap("/sdcard/screen.jpg"));
-/*
-						currCMD = "file";
-						out.write(currCMD.getBytes());
-						out.flush();
-						currCMD = readCMDFromSocket(in);
-						Log.v(androidService.TAG, Thread.currentThread().getName() + "---->" + "begin send file**currCMD ==== " + currCMD);
-*/
-                            byte[] filebytes = FileHelper.readFile("screen.jpg");
-							//byte[] filebytes = FileHelper.readFile("screensmall.jpg");
-//							byte[] filelength = new byte[4];
-//							filelength = MyUtil.intToByte(filebytes.length);
-//							byte[] fileformat = null;
-//							fileformat = ".png".getBytes();
-
-							String encodedString = Base64.encodeToString(filebytes, Base64.DEFAULT);
-							byte [] b=encodedString.getBytes();
-							out.write(("length:"+b.length+"").getBytes());
-							out.flush();
-							out.write(b);
-							out.flush();
-
-						}
-//						currCMD = readCMDFromSocket(in);
-
+					if(currCMD.equals("start")){
+                        Thread thread=new Thread(new Runnable()
+                        {
+                            @Override
+                            public void run()
+                            {
+                                while(true) {
+                                    try {
+                                        process = Runtime.getRuntime().exec(new String[]{"su", "-c", command});// the phone must be root,it can exctue the adb command
+                                        process.waitFor();
+                                        byte[] filebytes = FileHelper.readFile("screen.jpg");
+                                        String encodedString = Base64.encodeToString(filebytes, Base64.DEFAULT);
+                                        byte[] b = encodedString.getBytes();
+                                        out.write(("length:" + b.length + "").getBytes());
+                                        out.flush();
+                                        out.write(b);
+                                        out.flush();
+                                    }
+                                    catch (Exception e){
+										break;
+									}
+                                }
+                            }
+                        });
+                        thread.start();
+					}else if(currCMD.indexOf("tyt")!=-1){
+						String cmd = "input swipe 100 100 100 100 "+currCMD.replace("tyt","");
+						process = Runtime.getRuntime().exec(new String[]{"su", "-c", cmd});// the phone must be root,it can exctue the adb command
+						process.waitFor();
 					}
+
 
 				} catch (Exception e)
 				{

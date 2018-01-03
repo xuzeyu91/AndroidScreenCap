@@ -99,61 +99,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="www\fonts\fontawesome-webfont.eot" />
-    <None Include="www\fonts\fontawesome-webfont.ttf" />
-    <None Include="www\fonts\fontawesome-webfont.woff" />
-    <None Include="www\fonts\fontawesome-webfont.woff2" />
-    <None Include="www\fonts\FontAwesome.otf" />
-    <None Include="www\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="www\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="www\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="www\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="www\Scripts\jquery-2.2.3.min.map" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="www\about.html" />
-    <Content Include="www\Content\about.css" />
-    <Content Include="www\Content\base.css" />
-    <Content Include="www\Content\bootstrap-theme.css" />
-    <Content Include="www\Content\bootstrap-theme.min.css" />
-    <Content Include="www\Content\bootstrap.css" />
-    <Content Include="www\Content\bootstrap.min.css" />
-    <Content Include="www\Content\font-awesome.css" />
-    <Content Include="www\Content\font-awesome.min.css" />
-    <Content Include="www\fonts\fontawesome-webfont.svg" />
-    <Content Include="www\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="www\images\balloon.png" />
-    <Content Include="www\images\beans.png" />
-    <Content Include="www\images\cloudLarge.png" />
-    <Content Include="www\images\cloudMedium.png" />
-    <Content Include="www\images\cloudSmall.png" />
-    <Content Include="www\images\dowEventCenter.png" />
-    <Content Include="www\images\friendshipShell.png" />
-    <Content Include="www\images\Glockenspiel.png" />
-    <Content Include="www\images\groundBack.png" />
-    <Content Include="www\images\groundFront.png" />
-    <Content Include="www\images\groundMid.png" />
-    <Content Include="www\images\logo.png" />
-    <Content Include="www\images\Planetarium.png" />
-    <Content Include="www\images\qrcode.jpg" />
-    <Content Include="www\images\skyline.png" />
-    <Content Include="www\index.html" />
-    <Content Include="www\microsurface.html" />
-    <Content Include="www\Scripts\about.js" />
-    <Content Include="www\Scripts\base.js" />
-    <Content Include="www\Scripts\bootstrap.js" />
-    <Content Include="www\Scripts\bootstrap.min.js" />
-    <Content Include="www\Scripts\jquery-2.2.3.intellisense.js" />
-    <Content Include="www\Scripts\jquery-2.2.3.js" />
-    <Content Include="www\Scripts\jquery-2.2.3.min.js" />
-    <Content Include="www\Scripts\stats.min.js" />
-    <Content Include="www\Scripts\xg.min.js" />
+    <None Include="Resources\开始 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
+    <None Include="Resources\结束.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

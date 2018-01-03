@@ -14,5 +14,9 @@
     {
         "merged": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

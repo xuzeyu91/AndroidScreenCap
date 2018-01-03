@@ -10,5 +10,9 @@
     {
         "merged": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
         "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     }
 ]

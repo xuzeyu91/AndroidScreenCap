@@ -25,9 +25,7 @@ namespace WindowClient
             InitializeComponent();
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             //RunCmd2("adb", "shell am broadcast -a NotifyServiceStop");
-            RunCmd2("adb", "forward tcp:12580 tcp:10086");
-            //RunCmd2("adb", "shell am broadcast -a NotifyServiceStart");
-            InitSocket();
+         
         }
 
         static bool RunCmd2(string cmdExe, string cmdStr)
@@ -139,7 +137,13 @@ namespace WindowClient
             }
         }
 
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RunCmd2("adb", "forward tcp:12580 tcp:10086");
+            //RunCmd2("adb", "shell am broadcast -a NotifyServiceStart");
+            InitSocket();
+
+        }
         /// <summary>
         /// 发送消息
         /// </summary>
@@ -147,8 +151,101 @@ namespace WindowClient
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            clientSocket.Send(Encoding.UTF8.GetBytes(txtContext.Text));
+            clientSocket.Send(Encoding.UTF8.GetBytes("start"));
         }
 
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        string checkpic = "";
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            int x = e.X;
+            int y = e.Y;
+            if (pic_logo1.Visible == false && pic_logo2.Visible == false)
+            {
+                pic_logo1.Location = new Point(x, y + 30);
+                pic_logo1.Visible = true;
+            }
+            else if (pic_logo1.Visible == true && pic_logo2.Visible == false)
+            {
+                pic_logo2.Location = new Point(x, y + 30);
+                pic_logo2.Visible = true;
+                checkpic = "2";
+            }
+            else {
+                if (checkpic == "1")
+                {
+                    pic_logo2.Location = new Point(x, y + 30);
+                    checkpic = "2";
+
+                }
+                else {
+                    pic_logo1.Location = new Point(x, y + 30);
+                    checkpic = "1";
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x1, x2, y1, y2;
+            x1 = pic_logo1.Location.X;
+            x2 = pic_logo2.Location.X;
+            y1 = pic_logo1.Location.X;
+            y2 = pic_logo2.Location.Y;
+            int MathX = System.Math.Abs(x1 - x2);
+            int MathY = System.Math.Abs(y1 - y2);
+            double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
+            double time;
+            if (Gen < 200)
+            {
+                time = Math.Round(Gen * 2.4, 0);
+            }
+            else
+            {
+                time = Math.Round(Gen * 2.6, 0);
+
+            }
+               
+           
+
+            clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
+            pic_logo1.Visible = false;
+            pic_logo2.Visible = false;
+            label1.Text = "距离：" + Gen.ToString();
+            label2.Text = "时间：" + time.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int x1, x2, y1, y2;
+            x1 = pic_logo1.Location.X;
+            x2 = pic_logo2.Location.X;
+            y1 = pic_logo1.Location.X;
+            y2 = pic_logo2.Location.Y;
+            int MathX = System.Math.Abs(x1 - x2);
+            int MathY = System.Math.Abs(y1 - y2);
+            double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
+            double time;
+            if (Gen > 300) {
+                time = Math.Round(Gen * 2.6, 0);
+            }
+            else if (Gen < 250)
+            {
+                time = Math.Round(Gen * 3.3, 0);
+            }
+            else {
+                time = Math.Round(Gen * 3, 0);
+            }
+
+            clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
+            pic_logo1.Visible = false;
+            pic_logo2.Visible = false;
+            label1.Text = "距离：" + Gen.ToString();
+            label2.Text = "时间：" + time.ToString();
+        }
     }
 }

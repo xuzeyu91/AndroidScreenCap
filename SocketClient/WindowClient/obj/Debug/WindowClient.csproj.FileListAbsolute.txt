@@ -53,3 +53,16 @@ F:\xm\qunkongdemo\myDemo\SocketClient\WindowClient\obj\Debug\WindowClient.csproj
 F:\xm\qunkongdemo\myDemo\SocketClient\WindowClient\obj\Debug\WindowClient.csproj.CoreCompileInputs.cache
 F:\xm\qunkongdemo\myDemo\SocketClient\WindowClient\obj\Debug\WindowClient.exe
 F:\xm\qunkongdemo\myDemo\SocketClient\WindowClient\obj\Debug\WindowClient.pdb
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\WindowClient.exe.config
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\WindowClient.exe
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\WindowClient.pdb
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\Newtonsoft.Json.dll
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\NetDimension.NanUI.pdb
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\bin\Debug\Newtonsoft.Json.xml
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.csprojResolveAssemblyReference.cache
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.Form1.resources
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.Properties.Resources.resources
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.csproj.GenerateResource.Cache
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.csproj.CoreCompileInputs.cache
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.exe
+F:\xm\qunkongdemo\AndroidScreenCap\SocketClient\WindowClient\obj\Debug\WindowClient.pdb

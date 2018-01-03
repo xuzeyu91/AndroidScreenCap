@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\qunkongdemo\\AndroidScreenCap\\testUsbConnect\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
         "source": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
